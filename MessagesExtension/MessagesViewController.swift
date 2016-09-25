@@ -12,6 +12,7 @@ import Messages
 class MessagesViewController: MSMessagesAppViewController, MonsterBrowserViewControllerDelegate, MonsterMakerViewControllerDelegate {
     
     
+    @IBOutlet weak var imageView: UIImageView!
     
     //var stickerBrowserViewController: StickerBrowserViewController!
 
@@ -124,7 +125,8 @@ class MessagesViewController: MSMessagesAppViewController, MonsterBrowserViewCon
         controller.view.frame = view.bounds
         
         controller.view.translatesAutoresizingMaskIntoConstraints = false
-        view.addSubview(controller.view)
+        //view.addSubview(controller.view)
+        view.insertSubview(controller.view, belowSubview: imageView)
         
         controller.view.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
         controller.view.rightAnchor.constraint(equalTo: view.rightAnchor).isActive = true
@@ -176,7 +178,7 @@ class MessagesViewController: MSMessagesAppViewController, MonsterBrowserViewCon
     
     override func willTransition(to presentationStyle: MSMessagesAppPresentationStyle) {
         // Called before the extension transitions to a new presentation style.
-        
+        view.bringSubview(toFront: imageView)
         presentChildViewController(for: presentationStyle)
     }
     
@@ -184,6 +186,7 @@ class MessagesViewController: MSMessagesAppViewController, MonsterBrowserViewCon
         // Called after the extension transitions to a new presentation style.
     
         // Use this method to finalize any behaviors associated with the change in presentation style.
+        view.sendSubview(toBack: imageView)
     }
     
     // MARK: - MonsterBrowserViewControllerDelegate

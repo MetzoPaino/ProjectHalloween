@@ -19,10 +19,24 @@
                     <view key="view" contentMode="scaleToFill" id="zMn-AG-sqS">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="528"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="wIa-6J-Tk4">
+                                <color key="backgroundColor" red="0.84313725490000002" green="0.84313725490000002" blue="0.85098039219999999" alpha="1" colorSpace="calibratedRGB"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="wIa-6J-Tk4" secondAttribute="trailing" id="UGR-l2-HU4"/>
+                            <constraint firstItem="wIa-6J-Tk4" firstAttribute="leading" secondItem="zMn-AG-sqS" secondAttribute="leading" id="keD-Og-QkV"/>
+                            <constraint firstItem="n38-gi-rB5" firstAttribute="top" secondItem="wIa-6J-Tk4" secondAttribute="bottom" id="mKC-T2-CVs"/>
+                            <constraint firstItem="wIa-6J-Tk4" firstAttribute="top" secondItem="qkL-Od-lgU" secondAttribute="bottom" id="rWh-s3-gTG"/>
+                        </constraints>
                     </view>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="320" height="528"/>
+                    <connections>
+                        <outlet property="imageView" destination="wIa-6J-Tk4" id="HdQ-JO-a2m"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="X47-rx-isc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -171,7 +185,7 @@
                                         </constraints>
                                     </collectionViewCell>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="AddCell" id="PTv-n5-VVx">
-                                        <rect key="frame" x="68" y="0.0" width="50" height="50"/>
+                                        <rect key="frame" x="67.5" y="0.0" width="50" height="50"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                             <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>

@@ -100,4 +100,20 @@ class MonsterBrowserViewController: UIViewController, UICollectionViewDataSource
             delegate?.addCellSelected()
         }
     }
+    
+    
+}
+
+extension MonsterBrowserViewController : UICollectionViewDelegateFlowLayout {
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width: 100, height: 100)
+    }
+    
+    //3
+//    func collectionView(collectionView: UICollectionView,
+//                        layout collectionViewLayout: UICollectionViewLayout,
+//                        insetForSectionAtIndex section: Int) -> UIEdgeInsets {
+//        return sectionInsets
+//    }
 }
