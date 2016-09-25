@@ -319,3 +319,10 @@ class MonsterMakerViewController: UIViewController, UICollectionViewDataSource, 
 //        UIImagePNGRepresentation(image)?.write(to: filePath) writeToFile(filePath, atomically: true)
     }
 }
+
+extension MonsterMakerViewController : UICollectionViewDelegateFlowLayout {
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width: 100, height: 100)
+    }
+}

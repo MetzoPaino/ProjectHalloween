@@ -11,76 +11,19 @@ import Messages
 
 class MessagesViewController: MSMessagesAppViewController, MonsterBrowserViewControllerDelegate, MonsterMakerViewControllerDelegate {
     
-    
     @IBOutlet weak var imageView: UIImageView!
     
-    //var stickerBrowserViewController: StickerBrowserViewController!
-
-    
-    
     let dataManager = DataManager()
-
-    
-    
-    
-    
-   // @IBOutlet weak var collectionView: UICollectionView!
-    
-//    override func willBecomeActive(with conversation: MSConversation) {
-//        super.willBecomeActive(with: conversation)
-//        
-//        // Present the view controller appropriate for the conversation and presentation style.
-//        presentChildViewController(for: .compact)
-//    }
     
     override func viewDidLoad() {
         
         super.viewDidLoad()
-        //stickerBrowserViewController = StickerBrowserViewController(stickerSize: .regular)
-        //stickerBrowserViewController.view.frame = self.view.frame
-//        stickerBrowserViewController.view.frame = self.containerView.frame
-//        //self.addChildViewController(stickerBrowserViewController)
-//        //self.view.addSubview(stickerBrowserViewController.view)
-//        
-       // stickerBrowserViewController.loadStickers()
-//        stickerBrowserViewController.stickerBrowserView.reloadData()
-//        
-//        
-//        
-//        
-////        self.containerView.addSubview(stickerBrowserViewController.view)
-//        //self.stickerBrowserViewController.view.bounds = self.containerView.bounds
-//        stickerBrowserViewController.view.sizeToFit()
-//       // stickerBrowserViewController.didMove(toParentViewController: self)
-//        print("stickerBrowserViewController bounds = \(stickerBrowserViewController.view.bounds.size.height)")
-//        
-//        customStickerView.sticker = stickerBrowserViewController.stickers.first
-//        customStickerView.backgroundColor = UIColor.black
-        //customStickerView.sticker
-        //customStickerView = MSStickerView(frame: customStickerView.frame, sticker: stickerBrowserViewController.stickers.first)
-        
-//        self.containerView.addSubview(stickerView)
-//        
-//        stickerView.bounds = self.containerView.bounds
-//        
-//        stickerView.frame = CGRect(x: 0, y: 0, width: 200, height: 200)
-//        
-//        let stickerView = MSStickerView(frame: self.containerView.frame, sticker: stickerBrowserViewController.stickers.first)
-//        self.containerView.addSubview(stickerView)
-//
-//        stickerView.bounds = self.containerView.bounds
-//
-//        stickerView.frame = CGRect(x: 0, y: 0, width: 200, height: 200)
     }
     
-    override func viewDidLayoutSubviews() {
-        
-        
-    }
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        view.sendSubview(toBack: imageView)
+        view.layoutIfNeeded()
     }
     
     // MARK: - Navigation
@@ -102,20 +45,6 @@ class MessagesViewController: MSMessagesAppViewController, MonsterBrowserViewCon
             controller.delegate = self
             showViewController(controller: controller)
         }
-        
-//        addChildViewController(controller)
-//        
-//        controller.view.frame = view.bounds
-//        
-//        controller.view.translatesAutoresizingMaskIntoConstraints = false
-//        view.addSubview(controller.view)
-//        
-//        controller.view.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
-//        controller.view.rightAnchor.constraint(equalTo: view.rightAnchor).isActive = true
-//        controller.view.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
-//        controller.view.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
-//        
-//        controller.didMove(toParentViewController: self)
     }
     
     func showViewController(controller: UIViewController) {

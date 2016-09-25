@@ -3,7 +3,9 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -11,7 +13,7 @@
         <!--Messages View Controller-->
         <scene sceneID="7MM-of-jgj">
             <objects>
-                <viewController id="ObA-dk-sSI" customClass="MessagesViewController" customModule="MessagesExtension" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="ObA-dk-sSI" customClass="MessagesViewController" customModule="MessagesExtension" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="qkL-Od-lgU"/>
                         <viewControllerLayoutGuide type="bottom" id="n38-gi-rB5"/>
@@ -28,10 +30,11 @@
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="wIa-6J-Tk4" secondAttribute="trailing" id="UGR-l2-HU4"/>
                             <constraint firstItem="wIa-6J-Tk4" firstAttribute="leading" secondItem="zMn-AG-sqS" secondAttribute="leading" id="keD-Og-QkV"/>
-                            <constraint firstItem="n38-gi-rB5" firstAttribute="top" secondItem="wIa-6J-Tk4" secondAttribute="bottom" id="mKC-T2-CVs"/>
+                            <constraint firstItem="n38-gi-rB5" firstAttribute="top" secondItem="wIa-6J-Tk4" secondAttribute="bottomMargin" id="mKC-T2-CVs"/>
                             <constraint firstItem="wIa-6J-Tk4" firstAttribute="top" secondItem="qkL-Od-lgU" secondAttribute="bottom" id="rWh-s3-gTG"/>
                         </constraints>
                     </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="320" height="528"/>
                     <connections>
@@ -40,7 +43,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="X47-rx-isc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-562" y="99"/>
+            <point key="canvasLocation" x="-563.20000000000005" y="98.950524737631198"/>
         </scene>
         <!--Title-->
         <scene sceneID="D4W-Iq-1fc">
@@ -185,7 +188,7 @@
                                         </constraints>
                                     </collectionViewCell>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="AddCell" id="PTv-n5-VVx">
-                                        <rect key="frame" x="67.5" y="0.0" width="50" height="50"/>
+                                        <rect key="frame" x="68" y="0.0" width="50" height="50"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                             <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
@@ -215,10 +218,10 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="XAm-yU-LBK" firstAttribute="top" secondItem="k7z-aN-U0f" secondAttribute="bottom" id="FDA-sg-5SS"/>
+                            <constraint firstItem="k7z-aN-U0f" firstAttribute="top" secondItem="goi-fm-5K4" secondAttribute="bottom" id="P2m-LU-t06"/>
                             <constraint firstItem="k7z-aN-U0f" firstAttribute="centerX" secondItem="DZC-rY-Xrl" secondAttribute="centerX" id="bz9-SH-NzX"/>
-                            <constraint firstItem="k7z-aN-U0f" firstAttribute="centerY" secondItem="DZC-rY-Xrl" secondAttribute="centerY" id="nST-kX-n9l"/>
                             <constraint firstItem="k7z-aN-U0f" firstAttribute="width" secondItem="DZC-rY-Xrl" secondAttribute="width" id="q7H-le-7Rh"/>
-                            <constraint firstItem="k7z-aN-U0f" firstAttribute="height" secondItem="DZC-rY-Xrl" secondAttribute="height" id="tGp-c3-GNp"/>
                         </constraints>
                     </view>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
