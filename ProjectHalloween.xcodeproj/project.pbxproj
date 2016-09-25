@@ -1,0 +1,536 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0A007FEC1D96B5E50081655E /* MonsterMakerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A007FEB1D96B5E50081655E /* MonsterMakerViewController.swift */; };
+		0A4198AB1D9407CC00A5B694 /* CustomStickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4198AA1D9407CC00A5B694 /* CustomStickerView.swift */; };
+		0A4198B01D940C3800A5B694 /* Blue.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A4198AD1D940C3800A5B694 /* Blue.png */; };
+		0A4198B11D940C3800A5B694 /* Red.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A4198AE1D940C3800A5B694 /* Red.png */; };
+		0A4198B21D940C3800A5B694 /* Yellow.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A4198AF1D940C3800A5B694 /* Yellow.png */; };
+		0A74F43B1D9806A100CDE801 /* MonsterBrowserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A74F43A1D9806A100CDE801 /* MonsterBrowserViewController.swift */; };
+		0A74F43D1D980BE900CDE801 /* StickerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A74F43C1D980BE900CDE801 /* StickerManager.swift */; };
+		0A74F4421D980EA600CDE801 /* Skeleton.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A74F43E1D980EA600CDE801 /* Skeleton.png */; };
+		0A74F4431D980EA600CDE801 /* Snake.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A74F43F1D980EA600CDE801 /* Snake.png */; };
+		0A74F4441D980EA600CDE801 /* Swamp.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A74F4401D980EA600CDE801 /* Swamp.png */; };
+		0A74F4451D980EA600CDE801 /* Vampire.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A74F4411D980EA600CDE801 /* Vampire.png */; };
+		0A74F4481D980EC000CDE801 /* Wolf.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A74F4471D980EC000CDE801 /* Wolf.png */; };
+		0A8650C11D98196B00CD633D /* CustomSticker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A8650C01D98196B00CD633D /* CustomSticker.swift */; };
+		0A8650C31D9820B700CD633D /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A8650C21D9820B700CD633D /* DataManager.swift */; };
+		0A8650C91D98521000CD633D /* Boo.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A8650C41D98521000CD633D /* Boo.png */; };
+		0A8650CA1D98521000CD633D /* Eyeball.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A8650C51D98521000CD633D /* Eyeball.png */; };
+		0A8650CB1D98521000CD633D /* HappyHalloween.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A8650C61D98521000CD633D /* HappyHalloween.png */; };
+		0A8650CC1D98521000CD633D /* KeepingItSpooky.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A8650C71D98521000CD633D /* KeepingItSpooky.png */; };
+		0A8650CD1D98521000CD633D /* Mask.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A8650C81D98521000CD633D /* Mask.png */; };
+		0AB88B0B1D985D20004BDA11 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0AB88B0A1D985D20004BDA11 /* Images.xcassets */; };
+		0AF96BCE1D931E9900F42A14 /* MessagesExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 0AF96BCD1D931E9900F42A14 /* MessagesExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		0AF96BD31D931E9900F42A14 /* Messages.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AF96BD21D931E9900F42A14 /* Messages.framework */; };
+		0AF96BD61D931E9900F42A14 /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF96BD51D931E9900F42A14 /* MessagesViewController.swift */; };
+		0AF96BD91D931E9900F42A14 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0AF96BD71D931E9900F42A14 /* MainInterface.storyboard */; };
+		0AF96BDB1D931E9900F42A14 /* MessagesAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0AF96BDA1D931E9900F42A14 /* MessagesAssets.xcassets */; };
+		0AF96BE71D93275D00F42A14 /* StickerBrowserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF96BE61D93275D00F42A14 /* StickerBrowserViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0AF96BCF1D931E9900F42A14 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0AF96BBD1D931E9900F42A14 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0AF96BCC1D931E9900F42A14;
+			remoteInfo = MessagesExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		0AF96BE21D931E9900F42A14 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				0AF96BCE1D931E9900F42A14 /* MessagesExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0A007FEB1D96B5E50081655E /* MonsterMakerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MonsterMakerViewController.swift; sourceTree = "<group>"; };
+		0A3DD5051D98581800D86466 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = ProjectHalloween/Info.plist; sourceTree = SOURCE_ROOT; };
+		0A4198AA1D9407CC00A5B694 /* CustomStickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomStickerView.swift; sourceTree = "<group>"; };
+		0A4198AC1D940AE500A5B694 /* MessagesExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MessagesExtension.entitlements; sourceTree = "<group>"; };
+		0A4198AD1D940C3800A5B694 /* Blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Blue.png; sourceTree = "<group>"; };
+		0A4198AE1D940C3800A5B694 /* Red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Red.png; sourceTree = "<group>"; };
+		0A4198AF1D940C3800A5B694 /* Yellow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Yellow.png; sourceTree = "<group>"; };
+		0A74F43A1D9806A100CDE801 /* MonsterBrowserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MonsterBrowserViewController.swift; sourceTree = "<group>"; };
+		0A74F43C1D980BE900CDE801 /* StickerManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StickerManager.swift; sourceTree = "<group>"; };
+		0A74F43E1D980EA600CDE801 /* Skeleton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Skeleton.png; sourceTree = "<group>"; };
+		0A74F43F1D980EA600CDE801 /* Snake.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Snake.png; sourceTree = "<group>"; };
+		0A74F4401D980EA600CDE801 /* Swamp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Swamp.png; sourceTree = "<group>"; };
+		0A74F4411D980EA600CDE801 /* Vampire.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Vampire.png; sourceTree = "<group>"; };
+		0A74F4471D980EC000CDE801 /* Wolf.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Wolf.png; sourceTree = "<group>"; };
+		0A8650C01D98196B00CD633D /* CustomSticker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomSticker.swift; sourceTree = "<group>"; };
+		0A8650C21D9820B700CD633D /* DataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		0A8650C41D98521000CD633D /* Boo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Boo.png; sourceTree = "<group>"; };
+		0A8650C51D98521000CD633D /* Eyeball.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Eyeball.png; sourceTree = "<group>"; };
+		0A8650C61D98521000CD633D /* HappyHalloween.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HappyHalloween.png; sourceTree = "<group>"; };
+		0A8650C71D98521000CD633D /* KeepingItSpooky.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = KeepingItSpooky.png; sourceTree = "<group>"; };
+		0A8650C81D98521000CD633D /* Mask.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Mask.png; sourceTree = "<group>"; };
+		0AB88B0A1D985D20004BDA11 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = ProjectHalloween/Images.xcassets; sourceTree = SOURCE_ROOT; };
+		0AF96BC31D931E9900F42A14 /* ProjectHalloween.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProjectHalloween.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0AF96BCD1D931E9900F42A14 /* MessagesExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = MessagesExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		0AF96BD21D931E9900F42A14 /* Messages.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Messages.framework; path = System/Library/Frameworks/Messages.framework; sourceTree = SDKROOT; };
+		0AF96BD51D931E9900F42A14 /* MessagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesViewController.swift; sourceTree = "<group>"; };
+		0AF96BD81D931E9900F42A14 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		0AF96BDA1D931E9900F42A14 /* MessagesAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = MessagesAssets.xcassets; sourceTree = "<group>"; };
+		0AF96BDC1D931E9900F42A14 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0AF96BE61D93275D00F42A14 /* StickerBrowserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StickerBrowserViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0AF96BCA1D931E9900F42A14 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0AF96BD31D931E9900F42A14 /* Messages.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0A74F4461D980EAB00CDE801 /* Stickers */ = {
+			isa = PBXGroup;
+			children = (
+				0A74F43E1D980EA600CDE801 /* Skeleton.png */,
+				0A74F43F1D980EA600CDE801 /* Snake.png */,
+				0A74F4471D980EC000CDE801 /* Wolf.png */,
+				0A74F4401D980EA600CDE801 /* Swamp.png */,
+				0A74F4411D980EA600CDE801 /* Vampire.png */,
+				0A8650CE1D98521700CD633D /* Accessories */,
+			);
+			name = Stickers;
+			sourceTree = "<group>";
+		};
+		0A8650BF1D98171700CD633D /* Old */ = {
+			isa = PBXGroup;
+			children = (
+				0AF96BE61D93275D00F42A14 /* StickerBrowserViewController.swift */,
+				0A4198AA1D9407CC00A5B694 /* CustomStickerView.swift */,
+			);
+			name = Old;
+			sourceTree = "<group>";
+		};
+		0A8650CE1D98521700CD633D /* Accessories */ = {
+			isa = PBXGroup;
+			children = (
+				0A8650C41D98521000CD633D /* Boo.png */,
+				0A8650C51D98521000CD633D /* Eyeball.png */,
+				0A8650C61D98521000CD633D /* HappyHalloween.png */,
+				0A8650C71D98521000CD633D /* KeepingItSpooky.png */,
+				0A8650C81D98521000CD633D /* Mask.png */,
+			);
+			name = Accessories;
+			sourceTree = "<group>";
+		};
+		0AF96BBC1D931E9900F42A14 = {
+			isa = PBXGroup;
+			children = (
+				0AF96BC51D931E9900F42A14 /* ProjectHalloween */,
+				0AF96BD41D931E9900F42A14 /* MessagesExtension */,
+				0AF96BD11D931E9900F42A14 /* Frameworks */,
+				0AF96BC41D931E9900F42A14 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0AF96BC41D931E9900F42A14 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0AF96BC31D931E9900F42A14 /* ProjectHalloween.app */,
+				0AF96BCD1D931E9900F42A14 /* MessagesExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0AF96BC51D931E9900F42A14 /* ProjectHalloween */ = {
+			isa = PBXGroup;
+			children = (
+				0A3DD5051D98581800D86466 /* Info.plist */,
+				0AB88B0A1D985D20004BDA11 /* Images.xcassets */,
+			);
+			name = ProjectHalloween;
+			path = ProjectHalloween/Assets.xcassets;
+			sourceTree = "<group>";
+		};
+		0AF96BD11D931E9900F42A14 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0AF96BD21D931E9900F42A14 /* Messages.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0AF96BD41D931E9900F42A14 /* MessagesExtension */ = {
+			isa = PBXGroup;
+			children = (
+				0A4198AD1D940C3800A5B694 /* Blue.png */,
+				0A4198AE1D940C3800A5B694 /* Red.png */,
+				0A4198AF1D940C3800A5B694 /* Yellow.png */,
+				0A74F4461D980EAB00CDE801 /* Stickers */,
+				0A4198AC1D940AE500A5B694 /* MessagesExtension.entitlements */,
+				0A8650C21D9820B700CD633D /* DataManager.swift */,
+				0A74F43C1D980BE900CDE801 /* StickerManager.swift */,
+				0AF96BD71D931E9900F42A14 /* MainInterface.storyboard */,
+				0AF96BD51D931E9900F42A14 /* MessagesViewController.swift */,
+				0A74F43A1D9806A100CDE801 /* MonsterBrowserViewController.swift */,
+				0A007FEB1D96B5E50081655E /* MonsterMakerViewController.swift */,
+				0A8650C01D98196B00CD633D /* CustomSticker.swift */,
+				0A8650BF1D98171700CD633D /* Old */,
+				0AF96BDA1D931E9900F42A14 /* MessagesAssets.xcassets */,
+				0AF96BDC1D931E9900F42A14 /* Info.plist */,
+			);
+			path = MessagesExtension;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0AF96BC21D931E9900F42A14 /* ProjectHalloween */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0AF96BE31D931E9900F42A14 /* Build configuration list for PBXNativeTarget "ProjectHalloween" */;
+			buildPhases = (
+				0AF96BC11D931E9900F42A14 /* Resources */,
+				0AF96BE21D931E9900F42A14 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0AF96BD01D931E9900F42A14 /* PBXTargetDependency */,
+			);
+			name = ProjectHalloween;
+			productName = StickerTest;
+			productReference = 0AF96BC31D931E9900F42A14 /* ProjectHalloween.app */;
+			productType = "com.apple.product-type.application.messages";
+		};
+		0AF96BCC1D931E9900F42A14 /* MessagesExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0AF96BDF1D931E9900F42A14 /* Build configuration list for PBXNativeTarget "MessagesExtension" */;
+			buildPhases = (
+				0AF96BC91D931E9900F42A14 /* Sources */,
+				0AF96BCA1D931E9900F42A14 /* Frameworks */,
+				0AF96BCB1D931E9900F42A14 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MessagesExtension;
+			productName = MessagesExtension;
+			productReference = 0AF96BCD1D931E9900F42A14 /* MessagesExtension.appex */;
+			productType = "com.apple.product-type.app-extension.messages";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0AF96BBD1D931E9900F42A14 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = "William Robinson";
+				TargetAttributes = {
+					0AF96BC21D931E9900F42A14 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = XEN7DUD59Z;
+						ProvisioningStyle = Automatic;
+					};
+					0AF96BCC1D931E9900F42A14 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = XEN7DUD59Z;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 0AF96BC01D931E9900F42A14 /* Build configuration list for PBXProject "ProjectHalloween" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0AF96BBC1D931E9900F42A14;
+			productRefGroup = 0AF96BC41D931E9900F42A14 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0AF96BC21D931E9900F42A14 /* ProjectHalloween */,
+				0AF96BCC1D931E9900F42A14 /* MessagesExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0AF96BC11D931E9900F42A14 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0AB88B0B1D985D20004BDA11 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0AF96BCB1D931E9900F42A14 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A8650CB1D98521000CD633D /* HappyHalloween.png in Resources */,
+				0A4198B01D940C3800A5B694 /* Blue.png in Resources */,
+				0A4198B21D940C3800A5B694 /* Yellow.png in Resources */,
+				0A74F4481D980EC000CDE801 /* Wolf.png in Resources */,
+				0A74F4451D980EA600CDE801 /* Vampire.png in Resources */,
+				0A8650C91D98521000CD633D /* Boo.png in Resources */,
+				0A4198B11D940C3800A5B694 /* Red.png in Resources */,
+				0A74F4421D980EA600CDE801 /* Skeleton.png in Resources */,
+				0AF96BDB1D931E9900F42A14 /* MessagesAssets.xcassets in Resources */,
+				0A8650CA1D98521000CD633D /* Eyeball.png in Resources */,
+				0AF96BD91D931E9900F42A14 /* MainInterface.storyboard in Resources */,
+				0A8650CC1D98521000CD633D /* KeepingItSpooky.png in Resources */,
+				0A8650CD1D98521000CD633D /* Mask.png in Resources */,
+				0A74F4431D980EA600CDE801 /* Snake.png in Resources */,
+				0A74F4441D980EA600CDE801 /* Swamp.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0AF96BC91D931E9900F42A14 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A007FEC1D96B5E50081655E /* MonsterMakerViewController.swift in Sources */,
+				0A8650C31D9820B700CD633D /* DataManager.swift in Sources */,
+				0A4198AB1D9407CC00A5B694 /* CustomStickerView.swift in Sources */,
+				0A74F43B1D9806A100CDE801 /* MonsterBrowserViewController.swift in Sources */,
+				0A74F43D1D980BE900CDE801 /* StickerManager.swift in Sources */,
+				0AF96BD61D931E9900F42A14 /* MessagesViewController.swift in Sources */,
+				0A8650C11D98196B00CD633D /* CustomSticker.swift in Sources */,
+				0AF96BE71D93275D00F42A14 /* StickerBrowserViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0AF96BD01D931E9900F42A14 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0AF96BCC1D931E9900F42A14 /* MessagesExtension */;
+			targetProxy = 0AF96BCF1D931E9900F42A14 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0AF96BD71D931E9900F42A14 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0AF96BD81D931E9900F42A14 /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0AF96BDD1D931E9900F42A14 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		0AF96BDE1D931E9900F42A14 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0AF96BE01D931E9900F42A14 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "iMessage App Icon";
+				CODE_SIGN_ENTITLEMENTS = MessagesExtension/MessagesExtension.entitlements;
+				DEVELOPMENT_TEAM = XEN7DUD59Z;
+				INFOPLIST_FILE = MessagesExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = WilliamRobinson.ProjectHalloween.MessagesExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		0AF96BE11D931E9900F42A14 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "iMessage App Icon";
+				CODE_SIGN_ENTITLEMENTS = MessagesExtension/MessagesExtension.entitlements;
+				DEVELOPMENT_TEAM = XEN7DUD59Z;
+				INFOPLIST_FILE = MessagesExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = WilliamRobinson.ProjectHalloween.MessagesExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		0AF96BE41D931E9900F42A14 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = XEN7DUD59Z;
+				INFOPLIST_FILE = ProjectHalloween/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = WilliamRobinson.ProjectHalloween;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0AF96BE51D931E9900F42A14 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = XEN7DUD59Z;
+				INFOPLIST_FILE = ProjectHalloween/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = WilliamRobinson.ProjectHalloween;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0AF96BC01D931E9900F42A14 /* Build configuration list for PBXProject "ProjectHalloween" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0AF96BDD1D931E9900F42A14 /* Debug */,
+				0AF96BDE1D931E9900F42A14 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0AF96BDF1D931E9900F42A14 /* Build configuration list for PBXNativeTarget "MessagesExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0AF96BE01D931E9900F42A14 /* Debug */,
+				0AF96BE11D931E9900F42A14 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0AF96BE31D931E9900F42A14 /* Build configuration list for PBXNativeTarget "ProjectHalloween" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0AF96BE41D931E9900F42A14 /* Debug */,
+				0AF96BE51D931E9900F42A14 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0AF96BBD1D931E9900F42A14 /* Project object */;
+}
