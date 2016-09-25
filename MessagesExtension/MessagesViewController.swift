@@ -23,7 +23,6 @@ class MessagesViewController: MSMessagesAppViewController, MonsterBrowserViewCon
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         view.sendSubview(toBack: imageView)
-        view.layoutIfNeeded()
     }
     
     // MARK: - Navigation

@@ -43,11 +43,25 @@ class StickerManager: NSObject, NSCoding {
         
         stickers.removeAll()
         
-        createSticker(asset: "Skeleton", localizedDescription: "Blue")
-        createSticker(asset: "Snake", localizedDescription: "Red")
-        createSticker(asset: "Wolf", localizedDescription: "Yellow")
-        createSticker(asset: "Swamp", localizedDescription: "Blue")
-        createSticker(asset: "Vampire", localizedDescription: "Red")
+        createSticker(asset: "Vamp0", localizedDescription: "Vampire")
+        createSticker(asset: "Wolf0", localizedDescription: "Wolf")
+        createSticker(asset: "Medusa0", localizedDescription: "Medusa")
+        createSticker(asset: "SkullKid0", localizedDescription: "Skull")
+        createSticker(asset: "Swamp0", localizedDescription: "Swamp")
+        
+        createSticker(asset: "Vamp1", localizedDescription: "Vampire")
+        createSticker(asset: "Wolf1", localizedDescription: "Wolf")
+        createSticker(asset: "Medusa1", localizedDescription: "Medusa")
+        createSticker(asset: "SkullKid1", localizedDescription: "Skull")
+        createSticker(asset: "Swamp1", localizedDescription: "Swamp")
+        
+        createSticker(asset: "Wolf2", localizedDescription: "Wolf")
+        createSticker(asset: "Medusa2", localizedDescription: "Medusa")
+        createSticker(asset: "SkullKid2", localizedDescription: "Skull")
+        createSticker(asset: "Swamp2", localizedDescription: "Swamp")
+        
+        createSticker(asset: "SkullKid3", localizedDescription: "Skull")
+
     }
     
     func loadCustomStickers() {

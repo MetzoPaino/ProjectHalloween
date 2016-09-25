@@ -89,7 +89,6 @@ class MonsterMakerViewController: UIViewController, UICollectionViewDataSource, 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath as IndexPath)
-        cell.backgroundColor = .green
         
         let imageView = cell.viewWithTag(1) as! UIImageView
         imageView.image = images[indexPath.row]

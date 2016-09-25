@@ -23,10 +23,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="wIa-6J-Tk4">
-                                <color key="backgroundColor" red="0.84313725490000002" green="0.84313725490000002" blue="0.85098039219999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="wIa-6J-Tk4" secondAttribute="trailing" id="UGR-l2-HU4"/>
                             <constraint firstItem="wIa-6J-Tk4" firstAttribute="leading" secondItem="zMn-AG-sqS" secondAttribute="leading" id="keD-Og-QkV"/>
@@ -58,7 +58,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="me5-Ts-yXG">
-                                <color key="backgroundColor" red="0.0" green="0.92549020049999997" blue="0.79607844350000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="me5-Ts-yXG" secondAttribute="height" multiplier="1:1" id="Ldl-ZZ-yR3"/>
                                 </constraints>
@@ -116,15 +116,15 @@
                                 </connections>
                             </collectionView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JtX-Ux-3Ja">
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="Save"/>
                                 <connections>
                                     <action selector="buttonPressed:" destination="hec-gb-9Ix" eventType="touchUpInside" id="WpI-1A-aL0"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="me5-Ts-yXG" firstAttribute="height" secondItem="06C-sB-RIr" secondAttribute="height" multiplier="0.5" id="3k6-En-ltQ"/>
+                            <constraint firstItem="me5-Ts-yXG" firstAttribute="height" secondItem="06C-sB-RIr" secondAttribute="height" multiplier="0.4" id="3k6-En-ltQ"/>
                             <constraint firstItem="40R-X0-up5" firstAttribute="top" secondItem="Zfo-tS-KVD" secondAttribute="bottom" id="68O-y4-toG"/>
                             <constraint firstItem="me5-Ts-yXG" firstAttribute="top" secondItem="5R8-k2-8LU" secondAttribute="bottom" id="JYa-Iz-QXF"/>
                             <constraint firstItem="Zfo-tS-KVD" firstAttribute="top" secondItem="me5-Ts-yXG" secondAttribute="bottom" id="mi4-uo-cDk"/>
@@ -159,7 +159,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="k7z-aN-U0f">
-                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="tjJ-Xd-8VG">
                                     <size key="itemSize" width="50" height="50"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -179,7 +179,6 @@
                                                 </view>
                                             </subviews>
                                         </view>
-                                        <color key="backgroundColor" red="0.20000000300000001" green="0.79607844350000001" blue="0.92549020049999997" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstItem="NuK-bI-gb5" firstAttribute="centerY" secondItem="wiC-kf-VPU" secondAttribute="centerY" id="YK9-4i-aCU"/>
                                             <constraint firstItem="NuK-bI-gb5" firstAttribute="width" secondItem="wiC-kf-VPU" secondAttribute="width" id="a0e-oy-yFJ"/>
@@ -216,13 +215,18 @@
                                 </connections>
                             </collectionView>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstAttribute="topMargin" secondItem="k7z-aN-U0f" secondAttribute="top" id="1qz-Kl-Wzi"/>
                             <constraint firstItem="XAm-yU-LBK" firstAttribute="top" secondItem="k7z-aN-U0f" secondAttribute="bottom" id="FDA-sg-5SS"/>
                             <constraint firstItem="k7z-aN-U0f" firstAttribute="top" secondItem="goi-fm-5K4" secondAttribute="bottom" id="P2m-LU-t06"/>
                             <constraint firstItem="k7z-aN-U0f" firstAttribute="centerX" secondItem="DZC-rY-Xrl" secondAttribute="centerX" id="bz9-SH-NzX"/>
                             <constraint firstItem="k7z-aN-U0f" firstAttribute="width" secondItem="DZC-rY-Xrl" secondAttribute="width" id="q7H-le-7Rh"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="P2m-LU-t06"/>
+                            </mask>
+                        </variation>
                     </view>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="320" height="528"/>
@@ -232,7 +236,8 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QRT-jz-MvH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="118" y="99"/>
+            <point key="canvasLocation" x="116.8" y="98.950524737631198"/>
         </scene>
     </scenes>
+    <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
 </document>
